@@ -1,0 +1,25 @@
+---
+abstract: 'Interface to validate UK bank account.'
+author:
+  - 'Mohammad S Anwar <mohammad.anwar@yahoo.com>'
+build_requires:
+  Readonly: 1.03
+  Test::More: 0
+configure_requires:
+  Module::Build: 0.36
+generated_by: 'Module::Build version 0.3607'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: BankAccount-Validator-UK
+provides:
+  BankAccount::Validator::UK:
+    file: lib/BankAccount/Validator/UK.pm
+    version: 0.01
+  BankAccount::Validator::UK::Rule:
+    file: lib/BankAccount/Validator/UK/Rule.pm
+    version: 0.01
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.01

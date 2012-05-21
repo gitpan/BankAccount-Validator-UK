@@ -1,0 +1,16 @@
+Build.PL
+Changes
+MANIFEST
+SIGNATURE
+MANIFEST.SKIP
+Makefile.PL
+README
+lib/BankAccount/Validator/UK.pm
+lib/BankAccount/Validator/UK/Rule.pm
+t/00-load.t
+t/01-unit-test.t
+t/02-unit-test.t
+t/manifest.t
+t/pod.t
+META.yml
+SIGNATURE    Added here by Module::Build

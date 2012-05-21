@@ -1,0 +1,41 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.68.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 235c0e343ce28f22aebb742e46bde2e0be0ca541 Build.PL
+SHA1 ba94c150d401586b4f34346d411f95340cc2a107 Changes
+SHA1 6b7b0354f4f2e083e53f1577807bd2f1a1ca15ae MANIFEST
+SHA1 7d20e4e840781030202bb045d5ab81b3fd1b68b0 MANIFEST.SKIP
+SHA1 835745450d1a106a19b1c6129465fadb8bc37d35 META.yml
+SHA1 860b906b64a43699338678f5a5af6eae0fe1dc31 Makefile.PL
+SHA1 a60470f862e770df436c1da1cfaf68289c1162c7 README
+SHA1 8730df3a0a12235d22a9b4519e4acc618aeaedff lib/BankAccount/Validator/UK.pm
+SHA1 597e9339149bb4839de7724636944cd0d6faba24 lib/BankAccount/Validator/UK/Rule.pm
+SHA1 5a6a587bc78b31d534950fecf32e7259f61880e3 t/00-load.t
+SHA1 bccea4103152927b33d16234d419ea9c3b3a0efa t/01-unit-test.t
+SHA1 a557cd94cc1e610bf4db724aa6a371595affaa44 t/02-unit-test.t
+SHA1 2b8ffb7e4f399af95d092743846ac8d438f2c53e t/manifest.t
+SHA1 47d5c45ab7859cf210bb5545105e975229a868e0 t/pod.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.14 (MingW32)
+
+iQEcBAEBAgAGBQJPulmdAAoJEPYcXBXhRYOhwnIH/3oApuyI0dkRcSJK6hJauzAY
+U0DhaAY8kkyRSI9py1Dazf1VbSUQIpIDmRAdeRVhPfI9ebREEiMLVJ06fdSvdD1s
+Zg1+7DVx9iRbBPekIxPNhpw+KH8YOdphJn0qdvVASHiGqA/ZiaewA6REu9GWnGGT
+EubrvUILwMaF4rcyVusCGTzvVIVC8RGBF1RhE5ofkFDyf4pe3JaQ4yvw5IfclXe4
+xG1gBkXc1d7QtaYHHdLtao6h+c/xmrlwLMUPecpqqQHIJvOuEYPgLnK5FQQ88W+3
+XEBag+/D+G4EaNMEDSAuKB32xnmbb8clpumqidg9fG+Y4LKIApVcKnDNo35lFOo=
+=Wi3n
+-----END PGP SIGNATURE-----
