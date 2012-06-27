@@ -14,11 +14,11 @@ BankAccount::Validator::UK - Interface to validate UK bank account.
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 DESCRIPTION
 
@@ -280,9 +280,15 @@ number.
     print "[87-14-27][09123496] is valid.\n" 
         if $account->is_valid('871427', '09123496');
 
-    print "Trace information:\n" . Dumper($self->get_trace();
+    print "Trace information:\n" . Dumper($account->get_trace());
 
 =cut
+
+sub get_trace
+{
+	my $self = shift;
+	return $self->{trace} if scalar(@{$self->{trace}});
+}
 
 sub _standard_check
 {   my $self = shift;
@@ -587,12 +593,12 @@ sub _check_result
 sub _get_rules
 {
     my $sc = shift;
+    return unless (defined($sc) && ($sc =~ /^\d+$/));
+    
     my $rules;
     foreach (@{BankAccount::Validator::UK::Rule::get_rules()})
     {
-        my $s = $_->{start}+0;
-        my $e = $_->{end}+0;
-        push @{$rules}, $_ if ($sc >= $s && $sc <= $e);
+        push @{$rules}, $_ if ($sc >= $_->{start} && $sc <= $_->{end});
     }
     return $rules;
 }

@@ -16,10 +16,10 @@ name: BankAccount-Validator-UK
 provides:
   BankAccount::Validator::UK:
     file: lib/BankAccount/Validator/UK.pm
-    version: 0.01
+    version: 0.02
   BankAccount::Validator::UK::Rule:
     file: lib/BankAccount/Validator/UK/Rule.pm
-    version: 0.01
+    version: 0.02
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.01
+version: 0.02

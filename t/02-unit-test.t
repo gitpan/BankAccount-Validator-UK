@@ -9,7 +9,7 @@ while (<DATA>)
     my $account = BankAccount::Validator::UK->new();
     my $actual = $account->is_valid($sort_code, $account_number) ? 'Y' : 'N';
     ok($actual eq $expected, $description);
-}
+}    
 __DATA__
 Pass modulus 10 check.|089999|66374958|Y
 Pass modulus 11 check.|107999|88837491|Y
