@@ -3,23 +3,22 @@ abstract: 'Interface to validate UK bank account.'
 author:
   - 'Mohammad S Anwar <mohammad.anwar@yahoo.com>'
 build_requires:
-  Readonly: 1.03
-  Test::More: 0
+  Test::More: '0'
 configure_requires:
-  Module::Build: 0.36
-generated_by: 'Module::Build version 0.3607'
-license: perl
+  ExtUtils::MakeMaker: '0'
+dynamic_config: 1
+generated_by: 'ExtUtils::MakeMaker version 6.66, CPAN::Meta::Converter version 2.141520'
+license: artistic_2
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+  version: '1.4'
 name: BankAccount-Validator-UK
-provides:
-  BankAccount::Validator::UK:
-    file: lib/BankAccount/Validator/UK.pm
-    version: 0.02
-  BankAccount::Validator::UK::Rule:
-    file: lib/BankAccount/Validator/UK/Rule.pm
-    version: 0.02
-resources:
-  license: http://dev.perl.org/licenses/
-version: 0.02
+no_index:
+  directory:
+    - t
+    - inc
+requires:
+  Moo: '0'
+  namespace::clean: '0'
+  perl: '5.006'
+version: '0.03'
