@@ -21,4 +21,4 @@ requires:
   Moo: '0'
   namespace::clean: '0'
   perl: '5.006'
-version: '0.03'
+version: '0.04'
