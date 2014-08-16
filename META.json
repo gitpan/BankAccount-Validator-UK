@@ -19,25 +19,13 @@
          "inc"
       ]
    },
-   "prereqs" : {
-      "build" : {
-         "requires" : {
-            "Test::More" : "0"
-         }
-      },
-      "configure" : {
-         "requires" : {
-            "ExtUtils::MakeMaker" : "0"
-         }
-      },
-      "runtime" : {
-         "requires" : {
-            "Moo" : "0",
-            "namespace::clean" : "0",
-            "perl" : "5.006"
-         }
+   "release_status" : "stable",
+   "resources" : {
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/Manwar/BankAccount-Validator-UK.git",
+         "web" : "https://github.com/Manwar/BankAccount-Validator-UK"
       }
    },
-   "release_status" : "stable",
-   "version" : "0.06"
+   "version" : "0.07"
 }

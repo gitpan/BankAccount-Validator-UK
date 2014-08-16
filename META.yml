@@ -2,10 +2,7 @@
 abstract: 'Interface to validate UK bank account.'
 author:
   - 'Mohammad S Anwar <mohammad.anwar@yahoo.com>'
-build_requires:
-  Test::More: '0'
-configure_requires:
-  ExtUtils::MakeMaker: '0'
+build_requires: {}
 dynamic_config: 1
 generated_by: 'ExtUtils::MakeMaker version 6.66, CPAN::Meta::Converter version 2.141520'
 license: artistic_2
@@ -17,8 +14,6 @@ no_index:
   directory:
     - t
     - inc
-requires:
-  Moo: '0'
-  namespace::clean: '0'
-  perl: '5.006'
-version: '0.06'
+resources:
+  repository: https://github.com/Manwar/BankAccount-Validator-UK.git
+version: '0.07'
