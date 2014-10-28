@@ -4,7 +4,7 @@
       "Mohammad S Anwar <mohammad.anwar@yahoo.com>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "ExtUtils::MakeMaker version 6.66, CPAN::Meta::Converter version 2.141520",
+   "generated_by" : "ExtUtils::MakeMaker version 7, CPAN::Meta::Converter version 2.141520",
    "license" : [
       "artistic_2"
    ],
@@ -19,6 +19,28 @@
          "inc"
       ]
    },
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Test::More" : "0"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "0"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "File::Share" : "0",
+            "File::ShareDir::Install" : "0.09",
+            "Moo" : "0",
+            "autodie" : "0",
+            "namespace::clean" : "0",
+            "perl" : "5.006"
+         }
+      }
+   },
    "release_status" : "stable",
    "resources" : {
       "repository" : {
@@ -27,5 +49,5 @@
          "web" : "https://github.com/Manwar/BankAccount-Validator-UK"
       }
    },
-   "version" : "0.12"
+   "version" : "0.13"
 }
